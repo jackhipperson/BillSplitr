@@ -1,0 +1,224 @@
+body {
+    margin:auto;
+    text-align: center;
+    font-family: 'Space Mono', monospace;
+    background-color: #d6efc7;
+    background-image: url("cubes.png");
+}
+
+.header {
+    margin: 30px auto 30px;
+}
+
+h1 {
+    color: #184D47;
+    font-family: 'Orbitron', sans-serif;
+}
+
+h3 {
+    margin:7px 0 3px;
+    font-family: 'Space Mono', monospace;
+}
+
+p {
+    font-family: 'Space Mono', monospace;
+}
+
+.amount-p {
+    margin-top: 3px;
+}
+
+.amount {
+    font-size: 2rem;
+}
+
+.bill-error-text, .people-error-text, .tip-error-text {
+    font-size: 0.75rem;
+    color:red;
+    margin:0;
+}
+
+table {
+    width: 100%;
+}
+
+.bg-h1-color {
+    background-color:#184D47 ;
+}
+
+.main-box {
+
+    height: 420px;
+    width: 800px;
+    padding: 0 5px;
+    background-color: white;
+    border-radius: 30px;
+    margin:0 auto;
+    text-align: center;
+}
+
+.left-box {
+    float: left;
+    height: 360px;
+    width: 350 px;
+    margin: 12px 8px;
+    background-color: white;
+    border-radius: 30px;
+    padding:2%;
+    text-align: left;
+}
+
+.right-box {
+    float: right;
+    height: 360px;
+    width: 340px;
+    margin: 12px 8px;
+    background-color: #184D47;
+    border-radius: 30px;
+    padding: 2%;
+    color:white;
+}
+
+.tip-button, .selected {
+    -webkit-border-radius: 4;
+    -moz-border-radius: 4;
+    border-radius: 4px;
+    font-family: 'Space Mono', monospace;
+    color: #ffffff;
+    font-size: 1rem;
+    padding: 10px 20px 10px 20px;
+    text-decoration: none;
+    border: 0;
+    width: 110px;
+    margin: 1px;
+    border: solid 2px;
+}
+
+.tip-button {
+    background: #184D47;
+    border-color:white;
+  }
+  
+  .tip-button:hover {
+    background: #EEBB4D;
+    background-image: -webkit-linear-gradient(top, #3cb0fd, 91D8E4);
+    background-image: -moz-linear-gradient(top, #3cb0fd, 91D8E4);
+    background-image: -ms-linear-gradient(top, #3cb0fd, 91D8E4);
+    background-image: -o-linear-gradient(top, #3cb0fd, 91D8E4);
+    background-image: linear-gradient(to bottom, #3cb0fd, 91D8E4);
+    text-decoration: none;
+  }
+
+  .selected {
+    background: #EEBB4D;
+    border-color:black;
+  }
+
+  .custom-tip, .custom-tip-selected, .custom-tip-error {
+    -webkit-border-radius: 4;
+    -moz-border-radius: 4;
+    border-radius: 4px;
+    font-family: 'Space Mono', monospace;
+    color: #ffffff;
+    font-size: 1rem;
+    padding: 10px 10px 10px 10px;
+    text-decoration: none;
+    text-align: center;
+    width: 86px;
+    margin: 1px;
+    border: solid 2px;
+  }
+
+  .custom-tip {
+    background: #184D47;
+    border-color:white;
+  }
+
+  .custom-tip-selected {
+    background: #EEBB4D;
+    border-color:black;
+  }
+
+  .custom-tip-error {
+    background: #184D47;
+    border-color:red;
+  }
+
+.input {
+        -webkit-border-radius: 4;
+        -moz-border-radius: 4;
+        border-radius: 4px;
+        font-family: 'Space Mono', monospace;
+        color: #fff;
+        background-color: #184D47 ;
+        font-size: 1rem;
+        text-decoration: none;
+        width: 336px;
+        margin: 0;
+        float: right;
+        text-align: right;
+        border: solid 2px;
+        border-color:white;
+}
+
+.error {
+    border-color: red;
+}
+
+
+#reset {
+    -webkit-border-radius: 4;
+    -moz-border-radius: 4;
+    border-radius: 4px;
+    font-family: 'Space Mono', monospace;
+    color: #000000;
+    font-size: 1rem;
+    background: #96BB7C;
+    padding: 10px 20px 10px 20px;
+    text-decoration: none;
+    border: 0;
+    width: 200px;
+    margin: 5px;
+  }
+  
+  #reset:hover {
+    background: #EEBB4D;
+    background-image: -webkit-linear-gradient(top, #EEBB4D, 91D8E4);
+    background-image: -moz-linear-gradient(top, #EEBB4D, 91D8E4);
+    background-image: -ms-linear-gradient(top, #EEBB4D, 91D8E4);
+    background-image: -o-linear-gradient(top, #EEBB4D, 91D8E4);
+    background-image: linear-gradient(to bottom, #EEBB4D, 91D8E4);
+    text-decoration: none;
+  }
+
+  @media screen and (max-width:840px) {
+    .main-box {
+
+        height: 800px;
+        width: 360px;
+        padding: 0 5px;
+        background-color: white;
+        border-radius: 30px;
+        margin:0 auto;
+        text-align: center;
+    }
+
+    .tip-button, .selected {
+        width: 100px;
+      }
+    
+      .custom-tip, .custom-tip-error, .custom-tip-selected {
+        width: 76px;
+      }
+
+    .input {
+        text-align: center;
+    }
+    .left-box, .right-box {
+        text-align: center;
+    }
+
+    .right-box {
+        width:330px
+    }
+}

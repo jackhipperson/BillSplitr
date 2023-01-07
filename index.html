@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]>      <html class="no-js"> <!--<![endif]-->
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>BillSplitr</title>
+        <meta name="description" content="">
+        <link rel="icon" type="image/x-icon" href="favicon.ico">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Orbitron&family=Space+Mono&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <div class="header">
+            <h1>BillSplitr</h1>
+        </div>
+
+            <div class="main-box">
+                <div class="left-box">
+                    <form></form>
+                    <p>Bill:</p>
+                    <input class="input" type="number" id="bill-amount" placeholder="0.00"/>
+                    <p class="bill-error-text" id="bill-error-text"></p>
+                    <p>Tip:</p>
+                    <button  class="tip-button" id="tip0">0%</button>
+                    <button  class="tip-button" id="tip5">5%</button>
+                    <button  class="tip-button" id="tip10">10%</button>
+                    <br>
+                    <button  class="tip-button" id="tip15">15%</button>
+                    <button  class="tip-button" id="tip20">20%</button>
+                    <input  type="number" class="custom-tip" placeholder="Custom" id="custom-tip">
+                    <p class="tip-error-text" id="tip-error-text"></p>
+                    <p>Number of People</p>
+                    <input class="input" type="number" id="number-of-people" placeholder="1">
+                    <p class="people-error-text" id="people-error-text"></p>
+                    </form>
+                </div>
+                <div class="right-box">
+                    <table>
+                        <tr>
+                            <td>
+                                <h3>Total incl. Tip</h3>
+                                <p class="amount-p">per person</p>
+                            </td>
+                            <td>
+                                <p class="amount" id="total-per-person">£0.00</p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <h3>Tip Amount</h3>
+                                <p class="amount-p" id="total-amount-per-person">per person</p>
+                            </td>
+                            <td>
+                                <p class="amount" id="tip-amount-per-person">£0.00</p>
+                            </td>
+                        </tr>
+                    </table>
+                    <br>
+                    <button id="reset">Reset</button>
+                </div>
+        </div>
+
+        <div>
+            <p>&copy 2023 Jack Hipperson</p>
+        </div>
+        
+        <script src="index.js" async defer></script>
+    </body>
+</html>
